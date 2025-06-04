@@ -420,7 +420,7 @@ class Outcome(Page):
         votes_for_A = votes.count("A")
         votes_for_B = votes.count("B")
         votes_for_C = votes.count("C")
-        votes_for_abstain = votes.count("abstain")
+        votes_for_abstain = 12 - votes_for_A - votes_for_B - votes_for_C
         
         budget_A = C.BUDGET   
         budget_B = C.BUDGET    
